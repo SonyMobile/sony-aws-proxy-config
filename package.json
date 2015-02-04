@@ -1,0 +1,55 @@
+{
+  "name": "sony-aws-proxy-config",
+  "version": "0.1.0",
+  "repository" : {
+    "type" : "git",
+    "url" : "http://code.sonyericsson.net/webapps/sony-aws-proxy-config.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec test",
+    "test-watch": "mocha --watch test",
+    "test-debug": "mocha test --reporter spec --debug-brk",
+    "test-ci": "mocha test --reporter xunit > ./tmp/test-results.xml",
+    "jshint": "jshint *.js **/*.js",
+    "jshint-ci": "jshint --reporter checkstyle *.js **/*.js > ./tmp/jshint.xml"
+  },
+  "jshintConfig": {
+    "bitwise": true,
+    "camelcase": true,
+    "curly": false,
+    "expr": true,
+    "eqeqeq": true,
+    "immed": true,
+    "indent": 4,
+    "latedef": "nofunct",
+    "newcap": true,
+    "undef": true,
+    "unused": true,
+    "strict": true,
+    "globalstrict": true,
+    "trailing": true,
+    "maxparams": 4,
+    "maxdepth": 2,
+    "maxcomplexity": 6,
+    "node": true,
+    "browser": true,
+    "globals": {
+        "describe": true,
+        "before": true,
+        "it": true
+    }
+  },
+  "dependencies": {
+    "debug": "",
+    "express": ""
+  },
+  "devDependencies": {
+    "chai": "",
+    "jshint": "",
+    "mocha": "",
+    "sinon": "",
+    "supertest": "",
+    "supervisor": ""
+  }
+}
