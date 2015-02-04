@@ -3,12 +3,14 @@
 # Installation
 
 ```
-$ npm install --save https://s3-eu-west-1.amazonaws.com/fxos-npm-modules/sony-aws-proxy-config/sony-aws-proxy-config-latest.tgz
+$ npm install --save sony-aws-proxy-config
 ```
 
 # Usage
 
 ```
-app.use(sony-aws-proxy-config(options));
+var AWS = require('aws-sdk');
+var sonyAwsProxyConfig = require('sony-aws-proxy-config');
+AWS.config.update(sonyAwsProxyConfig());
 ```
 
