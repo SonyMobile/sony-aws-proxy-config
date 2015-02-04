@@ -1,9 +1,9 @@
 {
   "name": "sony-aws-proxy-config",
   "version": "1.0.0",
-  "repository" : {
-    "type" : "git",
-    "url" : "http://code.sonyericsson.net/webapps/sony-aws-proxy-config.git"
+  "repository": {
+    "type": "git",
+    "url": "http://code.sonyericsson.net/webapps/sony-aws-proxy-config.git"
   },
   "main": "lib/sony-aws-proxy-config.js",
   "scripts": {
@@ -35,13 +35,14 @@
     "node": true,
     "browser": true,
     "globals": {
-        "describe": true,
-        "before": true,
-        "it": true
+      "describe": true,
+      "before": true,
+      "it": true
     }
   },
   "dependencies": {
-    "debug": ""
+    "debug": "",
+    "tunnel": "0.0.3"
   },
   "devDependencies": {
     "chai": "",
