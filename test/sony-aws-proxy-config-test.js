@@ -1,6 +1,5 @@
 'use strict';
-
-var sinon = require('sinon');
+// jshint camelcase: false
 var expect = require('chai').expect;
 var sonyAwsProxyConfig = require('../lib/sony-aws-proxy-config');
 
@@ -26,7 +25,7 @@ describe('#sonyAwsProxyConfig', function() {
     });
     describe('with cntlm proxy', function() {
         it('responds with agent proxy', function() {
-            process.env.http_proxy = 'http://localhost:3128/'
+            process.env.http_proxy = 'http://localhost:3128/';
             var config = sonyAwsProxyConfig();
             expect(config.httpOptions.agent).to.be.defined;
             expect(config.httpOptions.agent.proxyOptions).to.deep.equal({

@@ -11,8 +11,8 @@
     "test-watch": "mocha --watch test",
     "test-debug": "mocha test --reporter spec --debug-brk",
     "test-ci": "mocha test --reporter xunit > ./tmp/test-results.xml",
-    "jshint": "jshint *.js **/*.js",
-    "jshint-ci": "jshint --reporter checkstyle *.js **/*.js > ./tmp/jshint.xml"
+    "jshint": "jshint **/*.js",
+    "jshint-ci": "jshint --reporter checkstyle **/*.js > ./tmp/jshint.xml"
   },
   "jshintConfig": {
     "bitwise": true,
