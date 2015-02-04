@@ -1,4 +1,6 @@
-# Sony-aws-proxy-config
+# sony-aws-proxy-config
+
+Helper function to configure AWS for Node.js with the Sony proxy server.
 
 # Installation
 
