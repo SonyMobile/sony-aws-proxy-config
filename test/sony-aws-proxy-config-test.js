@@ -16,10 +16,11 @@ describe('#sonyAwsProxyConfig', function() {
         it('responds with direct proxy', function() {
             process.env.http_proxy =
                 'http://proxy.global.sonyericsson.net:8080';
-            expect(sonyAwsProxyConfig()).to.deep.equal({
-                httpOptions: {
-                    proxy: "http://proxy.global.sonyericsson.net:8080"
-                }
+            var config = sonyAwsProxyConfig();
+            expect(config.httpOptions.agent).to.be.defined;
+            expect(config.httpOptions.agent.proxyOptions).to.deep.equal({
+                host: 'proxy.global.sonyericsson.net',
+                port: 8080
             });
         });
     });
