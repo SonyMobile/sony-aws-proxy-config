@@ -1,6 +1,6 @@
 {
   "name": "sony-aws-proxy-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "http://code.sonyericsson.net/webapps/sony-aws-proxy-config.git"
