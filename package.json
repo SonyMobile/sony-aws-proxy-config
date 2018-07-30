@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "debug": "",
-    "https-proxy-agent": "^1.0.0"
+    "https-proxy-agent": "^2.2.1"
   },
   "devDependencies": {
     "chai": "",
